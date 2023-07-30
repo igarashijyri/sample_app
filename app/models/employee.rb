@@ -8,4 +8,8 @@ class Employee < ApplicationRecord
   validates :note,                        exclusion: { in: [nil] }
   validates :department,                  exclusion: { in: [nil] }
   validates :payment ,numericality: true, exclusion: { in: [nil] }
+
+  def self.ransackable_attributes(auth_object = nil)
+    ["birth", "created_at", "department", "gender", "id", "joined_date", "lock_version", "name", "note", "payment", "updated_at"]
+  end
 end

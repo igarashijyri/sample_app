@@ -1,0 +1,17 @@
+ja:
+  date:
+    formats:
+      ja_ymd: ! '%Y年%m月%d日'
+      ja_md: ! '%m月%d日'
+      ja_ym: ! '%Y年%m月'
+      hyphen: ! '%Y-%m-%d'
+      wday: '(%a)'
+  time:
+    formats:
+      ja_ymdhm: ! '%Y年%m月%d日 %H時%M分'
+      ja_ymd: ! '%Y年%m月%d日' # time配下に追記
+      hm: ! '%H:%M'
+      ja_hm: ! '%H時%M分'
+      ymdhm: ! '%Y/%m/%d %H:%M'
+      mdhm: ! '%m/%d %H:%M'
+      dot_ymd: ! '%Y.%m.%d'
