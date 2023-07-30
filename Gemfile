@@ -20,6 +20,8 @@ gem "redis", "~> 4.0"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem 'importmap-rails'
+gem 'activeadmin'
+gem 'kaminari'
 
 # login
 gem 'devise'
