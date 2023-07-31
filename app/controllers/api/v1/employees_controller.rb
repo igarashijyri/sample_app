@@ -7,7 +7,6 @@ class Api::V1::EmployeesController < ApiController
   end
 
   def index
-    # データがなくてデータ返せていないのでデータ作る
     employees = Employee.all
     render json: employees
   end
