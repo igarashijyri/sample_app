@@ -8,14 +8,19 @@ export default class extends Controller {
 
 import * as Vue from "vue";
 
-const App = Vue.createApp({
-    data(){
-        return {
-            text: 'Hello Vue'
-        }
-    },
-})
+Vue.createApp({
+  data() {
+    return {
+      message: ''
+    };
+  },
+  methods: {
+    // クリック時に現在日時を取得
+    onclick() {
+      this.message = new Date().toLocaleString();
+    }
+  }
+}).mount('#app');
 
-App.mount("#app");
 // マッピングをファイル名で行なっているわけではない
 // マッピングの仕組みを調べて、構造を把握するところまでやりたい
