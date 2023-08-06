@@ -1,4 +1,9 @@
-<div id="app">
+<div id="app_1">
   <button v-on:click="onclick">クリック</button>
   <p>{{ message }}</p>
+</div>
+
+<div id="app_2">
+  <img v-bind:src="path" alt="ロゴ画像"
+    v-on:mouseenter="onmouseenter" v-on:mouseleave="onmouseleave" />
 </div>
